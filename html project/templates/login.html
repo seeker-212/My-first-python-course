@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="login-form" method="POST" action="/login">
+        <h1>Welcome Back</h1>
+        <p>Sign in to your account</p>
+
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            placeholder="Enter your username"
+            name="username"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            name="password"
+          />
+        </div>
+
+        <button type="submit">Login</button>
+
+        <div class="links">
+          <a href="#">Forgot Password?</a>
+          <a href="#">Create Account</a>
+        </div>
+      </form>
+      <div class="welcome-message">{{ message }}!</div>
+    </div>
+  </body>
+</html>
